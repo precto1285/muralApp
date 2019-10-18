@@ -9,9 +9,16 @@
   <!-- Bootstrap CSS -->
   <style>
     body {
-      background-image: url('images/big-tiny-belly-1613586-unsplash.jpg');
+      background-image: url('images/san diego.jpg');
       background-repeat: none;
       background-size: 100%;
+    }
+
+    #modal-main {
+      background-image: url('images/IMG_4230.jpg');
+      background-repeat: none;
+      background-size: 100%;
+      height: 100%;
     }
   </style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,8 +27,25 @@
 
 <body>
   <div class="container text-white text-center">
-    <h1>This is the main pop up intro page. images with logo with a pop up login appears with 2 options: Sign Up and
-      Sign In</h1>
+
+    <!-- Intro Modal -->
+    <div id="myModal" class="modal mt-5" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div id="modal-main" class="modal-body">
+            <div class="my-5">
+              <img src="images/Logo.png" alt="logo" width="35%">
+            </div>
+          </div>
+
+          <a href="https://precto1285.github.io/muralApp/mainPage.html" class="bg-primary border-round text-white">Sign
+            In</a>
+
+        </div>
+      </div>
+    </div>
+
+
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -34,6 +58,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script>
+    $(window).click(function () {
+      setTimeout(function () {
+        $('#myModal').modal('show');
+      }, 2000);
+    });
+  </script>
 </body>
 
 </html>
