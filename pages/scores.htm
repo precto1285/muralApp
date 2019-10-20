@@ -10,20 +10,89 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    #ad {
+      background-image: url("../images/IMG_4241.jpg");
+      background-size: 30%;
+      background-repeat: none;
+    }
+  </style>
 </head>
 
-<body class="bg-danger text-white">
+<body class="bg-secondary text-white">
+  <div class="row mb-2">
+    <div id="ad" class="col-lg-12 py-3 text-warning text-center">
+      <h3>This is where advertisements will appear*</h3>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <button onClick="window.location.href='mainPage.htm'" class="btn btn-success mt-5">Back To Main Page</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-md-12">
-
+        <table class="table table-hover table-dark text-center">
+          <thead class="text-info">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Mural</th>
+              <th scope="col">Status</th>
+              <th scope="col">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Basketball Mural</td>
+              <td>
+                <p class="text-danger">Not Yet Found</p>
+              </td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Bunny Mural</td>
+              <td>
+                <p class="text-danger">Not Yet Found</p>
+              </td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><a href="prettyGirl.htm">Pretty Girl Mural</a></td>
+              <td>
+                <p class="text-success">Found</p>
+              </td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+    <div class="row text-white text-center">
+      <h3>Points System:</h3>
+      <ul>
+        <li>
+          <h6>Get <span class="text-warning">5</span> points and get 5% off <a href="https://www.starbucks.com/"
+              target="_blank">Starbucks</a> coffee</h6>
+        </li>
+        <li>
+          <h6>Get <span class=" text-warning">10</span> points and get 10% off <a
+              href="https://www.luchalibretacoshop.com/" target="_blank">Lucha Libre Taco Shop</a> tacos</h6>
+        </li>
+        <li>
+          <h6>Get <span class="text-warning">15</span> points and get 15% off <a href="http://ripcurrentbrewing.com/"
+              target="_blank">Rip Current Brewing</a> draft beer
+          </h6>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="ad" class="col-lg-12 py-3 text-warning text-center">
+    <h3>This is where advertisements will appear*</h3>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
