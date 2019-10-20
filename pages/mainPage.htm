@@ -34,14 +34,24 @@
   <div class="row">
     <div class="col-lg-6">
       <div class="p-5">
-        <center> <img src="../images/Logo.png" alt="logo" width=100%>
-          <p>This is where the controllers of the App will appear </p>
-          <br>
-          <hr>
-          <button onClick="window.location.href='artList.htm'" class="btn btn-block btn-success mb-5">Art List</button>
-          <button onClick="window.location.href='Artwork.htm'" class="btn btn-block btn-info mb-5">Art Work</button>
-          <button onClick="window.location.href='scores.htm'" class="btn btn-block btn-danger mb-5">Scores</button>
-        </center>
+        <div class="row">
+          <center> <img src="../images/Logo.png" alt="logo" width=100%>
+            <p>This is where the controllers of the App will appear </p>
+            <br>
+            <hr>
+            <button onClick="window.location.href='artList.htm'" class="btn btn-block btn-success mb-5">Art
+              List</button>
+            <button onClick="window.location.href='Artwork.htm'" class="btn btn-block btn-info mb-5">Art Work</button>
+            <button onClick="window.location.href='scores.htm'" class="btn btn-block btn-danger mb-5">Scores</button>
+          </center>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><button data-toggle="modal" data-target="#exampleModalLong"
+              class="btn btn-block btn-secondary">terms and condition</button></div>
+          <div class="col-sm-6">
+            <button onClick="window.location.href='../index.htm'" class="btn btn-block btn-warning">sign out</button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-lg-6">
@@ -75,6 +85,44 @@
     </div>
   </div>
 
+  <!-- Terms and Condition Modal-->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eius culpa iste dolorum autem sequi.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, id! Tenetur laboriosam, vitae
+              asperiores velit eius similique cum saepe facere?</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quam.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id eaque pariatur ex voluptas hic.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorem tempora iste. Cupiditate.
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt distinctio numquam nesciunt quisquam
+              sapiente perspiciatis minus nobis quos. Hic quos distinctio veritatis fugit, vitae eligendi.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia ratione libero excepturi tempora
+              obcaecati?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, labore?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, distinctio.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consequuntur ex qui natus error,
+              laboriosam consequatur quo ut, labore omnis enim obcaecati. Eum amet quibusdam aspernatur reiciendis
+              doloribus hic architecto?</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
