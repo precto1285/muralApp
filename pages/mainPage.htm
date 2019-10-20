@@ -16,25 +16,64 @@
       background-repeat: none;
       background-size: 100%;
     }
+
+    .col-lg-12 {
+      background-image: url("../images/IMG_4241.jpg");
+      background-size: 30%;
+      background-repeat: none;
+    }
   </style>
 </head>
 
 <body>
-
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="p-5">
-        <center><img src="../images/san_diego_bay_harbor_map.jpg" alt="logo" width=75%></center>
-      </div>
+  <div class="row mb-2">
+    <div class="col-lg-12 py-3 text-warning text-center">
+      <h3>This is where advertisements will appear*</h3>
     </div>
-    <div class="col-lg-4">
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
       <div class="p-5">
         <center> <img src="../images/Logo.png" alt="logo" width=100%>
-          <p>This is where the controllers of the App will appear</p>
+          <p>This is where the controllers of the App will appear </p>
+          <br>
+          <hr>
+          <button onClick="window.location.href='artList.htm'" class="btn btn-block btn-success mb-5">Art List</button>
+          <button onClick="window.location.href='Artwork.htm'" class="btn btn-block btn-info mb-5">Art Work</button>
+          <button onClick="window.location.href='scores.htm'" class="btn btn-block btn-danger mb-5">Scores</button>
         </center>
       </div>
     </div>
+    <div class="col-lg-6">
+      <div class="p-5">
+        <center><a data-toggle="modal" data-target="#foundArtWork"><img src="../images/san_diego_bay_harbor_map.jpg"
+              alt="logo" width=70%></a></center>
+      </div>
+    </div>
   </div>
+
+  <!-- Found ArtWork on Map Modal-->
+  <div class="modal fade" id="foundArtWork" tabindex="-1" role="dialog" aria-labelledby="foundArtWorkLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header  bg-secondary text-white">
+          <h5 class="modal-title" id="foundArtWorkLabel">You Found It!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../images/IMG_4230.jpg" alt="prettyFace" width=100%>
+        </div>
+        <div class="modal-footer bg-secondary">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Details</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
